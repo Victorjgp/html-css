@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+        nav{
+            background-color: darkgray;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.671);/*propriedade inset para sombra interna*/
+        }
+        nav > a{
+            text-decoration: none; /*aqui tirou o underline*/
+            color: white;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        nav > a:hover{
+            text-decoration: underline; /*aqui pisca o underline pelo hover*/
+        }
+        article{
+            background-color: lightgray;
+            border: 5px solid white;
+            padding: 5px;
+            margin: 1px;
+        }
+        article > aside{
+            background-color: darkgray;
+        }
+        main{
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        footer{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 2px;
+            margin: auto;
+             
+        }
+        footer > p{ /*Removido a margin do P*/
+            margin: 0px; 
+        }
+        div#bola{
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusantium, quibusdam qui sunt cum, corrupti sapiente aut obcaecati labore animi debitis voluptatum incidunt magnam ratione commodi similique ducimus voluptatibus et?</p>
+                <aside> <!-- aside faz referencia ao conteudo dentro de article-->
+                    <p>Escrito por Victor</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Victor</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

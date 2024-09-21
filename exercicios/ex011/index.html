@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quaerat.</p>
+    
+    <picture> <!-- atentar a ordem-->
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png"> <!-- se for abaixo de 750px mostra a imagem P-->
+        <source media="(max-width: 1000px)" srcset="imagens/fotom.png" type="image/png"> <!-- se for abaixo de 1000x mostra a imagem M-->
+        <img src="imagens/fotog.png" alt="foto flexivel"><!-- acima de 1k será G--> <!-- IMG Imagem base-->
+    </picture>
+    <h1>Audio</h1>
+    <audio src="midia/RADWIMPS.mp3" controls autoplay></audio>
+    <!-- MP3 = MPEG, WAV, OGG-->
+     <!-- Para multiplos formatos utilizar a estrutura <source src="arquivo" type="audio/ogg" controls autoplay> -->
+</body>
+</html>

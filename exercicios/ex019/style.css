@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(134, 255, 215);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+h1{
+    color: rgb(65, 83, 72);
+}
+h1#principal{       /*h1 com id principal para personalizar*/
+    color: blue;
+    text-align: center;
+    background-color: bisque;
+}
+h2{
+    color: rgb(49, 158, 170);
+    
+}
+.basico{ /* chamada de classe class nomeada de basico*/
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    background-color: rgb(198, 226, 43);
+    font-weight: 900; /*negrito*/
+}
+.destaque{
+    background-color: chocolate;
+}
+
+/*Em html é id = em css # ( 1 elemento apenas 1 id)
+  Em html é class = em css .  (pode varios elementos de classe)
+  ================================
+
+  em multiplas formatações personalizadas usar class.
+*/
+

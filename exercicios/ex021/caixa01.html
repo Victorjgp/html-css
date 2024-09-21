@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            border: 5px solid rgb(247, 158, 24);
+            /*border-width: 5px;     TAMANHO, TIPO, COR.
+            border-style: solid;
+            background-color: blanchedalmond; */
+
+            padding: 10px 10px 10px 10px;/*shorthand*/
+            /*padding-top: 1px;
+            padding-right: 1px;
+            padding-bottom: 1px;
+            padding-left: 1px;
+            */
+            background-color: rgb(104, 104, 223);
+            width: 400px;
+            height: 50px;
+
+            outline: 2px dashed blue;
+            /*outline é a linha apos a borda*/
+            /*outline-width: 2px;
+            outline-style: dashed;
+            outline-color: blue;*/
+
+            margin: 5px auto 5px auto; /*shorthand*/
+            /*margin-top: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px; */ 
+
+            /*PROPRIEDADE dysplay:inline ou block ;
+            PARA TRANSFORMA EM BOXLEVEL OU INLINE LEVEL EM CASO DE CONVERSÃO.
+            
+            
+            */
+
+        }
+        a{
+            border-width: 5px;
+            border-style: solid;
+            border-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit saepe earum eius dolorum, adipisci delectus ut, repellendus voluptatum, <a href="#">voluptatem</a> perferendis cumque ratione? Rerum veritatis aperiam consequuntur, laudantium eligendi doloribus officia.</p>
+</body>
+</html>
