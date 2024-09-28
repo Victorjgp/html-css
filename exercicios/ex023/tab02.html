@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: rgb(160, 160, 160);
+            color: white;
+        }
+        table{
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            width: 250px;
+        }
+        .num{
+            text-align: right;
+            
+        }
+    
+        /* Definindo largura fixa para a segunda coluna */
+        .col-populacao {
+            width: 150px;
+        }
+
+        
+    </style>
+     <!-- titulos th / dados td
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+</head>
+<body>
+    <h1>tabelas grandes</h1>
+    <table>
+        <caption> População das unidades federativas</caption>
+        <thead>
+            <tr> <!-- Scope col para coluna e row para linha-->
+                <th scope="col">Estado</th>
+                <th scope="col" class="col-populacao">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num col-populacao">11 451 999</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num col-populacao">6 211 223</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num col-populacao">2 428 708</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num col-populacao">0000</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
