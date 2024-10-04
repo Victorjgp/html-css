@@ -12,11 +12,15 @@
 </head>
 <body>
     <h1>Primeiro formulario</h1>
-    <form action="cadastro.php" autocomplete="off">
-        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required></p>
         <p><label for="iSobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="iSobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+        <p><input type="submit" value="Enviar" required></p>
     </form>
 </body>
 </html>
-<!--Name para iframe e formularios-->
+<!--Name para iframe e formularios.
+
+
+method GET para dados simples, post para dados sensiveis em formularios.
+-->
